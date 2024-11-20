@@ -27,4 +27,15 @@
         android:gravity="center_vertical"
         android:text="description"
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="35dp"
+        android:text="country"
+        android:textSize="20dp" />
 </RelativeLayout>
