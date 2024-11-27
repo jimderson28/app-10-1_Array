@@ -1,52 +1,65 @@
-[
-  {
-    "description": "珠穆朗瑪峰",
-    "imgId": "R.drawable.view1",
-    "country": "尼泊爾"
-  },
-  {
-    "description": "雷神之井瀑布",
-    "imgId": "R.drawable.view2",
-    "country": "美國"
-  },
-  {
-    "description": "藍冰洞",
-    "imgId": "R.drawable.view3",
-    "country": "冰島"
-  },
-  {
-    "description": "羅賴馬山",
-    "imgId": "R.drawable.view4",
-    "country": "委內瑞拉"
-  },
-  {
-    "description": "奇蹟石",
-    "imgId": "R.drawable.view5",
-    "country": "挪威"
-  },
-  {
-    "description": "撒哈拉大沙漠",
-    "imgId": "R.drawable.view6",
-    "country": "北非"
-  },
-  {
-    "description": "優勝美地國家公園",
-    "imgId": "R.drawable.view7",
-    "country": "美國加州"
-  },
-  {
-    "description": "大堡礁",
-    "imgId": "R.drawable.view8",
-    "country": "澳洲"
-  },
-  {
-    "description": "魔法河",
-    "imgId": "R.drawable.view9",
-    "country": "菲律賓"
-  },
-  {
-    "description": "塞倫蓋蒂平原",
-    "imgId": "R.drawable.view10",
-    "country": "東非坦尚尼亞"
-  }
-]
+{
+  "Asia": [
+    {
+      "description": "珠穆朗瑪峰",
+      "imgId": "R.drawable.view1",
+      "country": "尼泊爾"
+    }
+  ,
+    {
+      "description": "魔法河",
+      "imgId": "R.drawable.view9",
+      "country": "菲律賓"
+    }
+  ],
+  "America": [
+    {
+      "description": "雷神之井瀑布",
+      "imgId": "R.drawable.view2",
+      "country": "美國"
+    },
+    {
+      "description": "優勝美地國家公園",
+      "imgId": "R.drawable.view7",
+      "country": "美國加州"
+    }
+  ],
+  "Africa": [
+    {
+      "description": "撒哈拉大沙漠",
+      "imgId": "R.drawable.view6",
+      "country": "北非"
+    },
+    {
+      "description": "塞倫蓋蒂平原",
+      "imgId": "R.drawable.view10",
+      "country": "東非坦尚尼亞"
+    }
+  ],
+  "Europe": [
+    {
+      "description": "藍冰洞",
+      "imgId": "R.drawable.view3",
+      "country": "冰島"
+    },
+    {
+      "description": "奇蹟石",
+      "imgId": "R.drawable.view5",
+      "country": "挪威"
+    }
+  ],
+  "Australia": [
+    {
+      "description": "大堡礁",
+      "imgId": "R.drawable.view8",
+      "country": "澳洲"
+    }
+  ],
+  "SouthAmerica": [
+    {
+      "description": "羅賴馬山",
+      "imgId": "R.drawable.view4",
+      "country": "委內瑞拉"
+    }
+  ]
+}
