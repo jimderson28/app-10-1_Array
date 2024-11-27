@@ -1,5 +1,14 @@
 package com.example.ex05_recyclerview01a;
 
+import android.content.Context;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class SceneInfo {
@@ -48,8 +57,55 @@ public class SceneInfo {
 //                new SceneInfo("Map", android.R.drawable.ic_dialog_map),
 //        };
 //        return myListData;
-//    }
-    public static ArrayList<SceneInfo> getMyListDataArrayList(){
+//    }publpub
+
+
+    public static ArrayList<SceneInfo> getMyListDataArrayList2() {
+        ArrayList<SceneInfo> myList = new ArrayList<SceneInfo>();
+        String[] description = {
+                "珠穆朗瑪峰",
+                "雷神之井瀑布",
+                "藍冰洞",
+                "羅賴馬山",
+                "奇蹟石",
+                "撒哈拉大沙漠",
+                "優勝美地國家公園",
+                "大堡礁",
+                "魔法河",
+                "塞倫蓋蒂平原"
+
+        };
+        int[] imgId = {
+                R.drawable.view1,
+                R.drawable.view2,
+                R.drawable.view3,
+                R.drawable.view4,
+                R.drawable.view5,
+                R.drawable.view6,
+                R.drawable.view7,
+                R.drawable.view8,
+                R.drawable.view9,
+                R.drawable.view10,
+        };
+        String[] country = {
+                "尼泊爾",
+                "美國",
+                "冰島",
+                "委內瑞拉",
+                "挪威",
+                "北非",
+                "美國加州",
+                "澳洲",
+                "菲律賓",
+                "東非坦尚尼亞"
+        };
+        for (int i = 0; i < description.length; i++) {
+            SceneInfo mySceneInfo = new SceneInfo(description[i], imgId[i], country[i]);
+            myList.add(mySceneInfo);
+        }
+        return myList;
+    }
+    public static ArrayList<SceneInfo> getMyListDataArrayList() {
         ArrayList<SceneInfo> myList = new ArrayList<SceneInfo>();
         myList.add(new SceneInfo("珠穆朗瑪峰", R.drawable.view1,"尼泊爾"));
         myList.add(new SceneInfo("雷神之井瀑布", R.drawable.view2,"美國"));

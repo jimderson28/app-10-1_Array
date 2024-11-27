@@ -1,0 +1,43 @@
+{
+
+  "尼泊爾": [{
+    "description": "珠穆朗瑪峰",
+    "imgId": "R.drawable.view1"
+  }],
+  "美國": [{
+    "description": "雷神之井瀑布",
+    "imgId": "R.drawable.view2"
+  }],
+  "冰島":  [{
+    "description": "藍冰洞",
+    "imgId": "R.drawable.view3"
+    }],
+  "委內瑞拉": [{
+    "description": "羅賴馬山",
+    "imgId": "R.drawable.view4"
+    }],
+  "挪威":  [{
+    "description": "奇蹟石",
+    "imgId": "R.drawable.view5"
+    }],
+  "北非":  [{
+    "description": "撒哈拉大沙漠",
+    "imgId": "R.drawable.view6"
+    }],
+  "美國加州":  [{
+    "description": "優勝美地國家公園",
+    "imgId": "R.drawable.view7"
+    }],
+  "澳洲":  [{
+    "description": "大堡礁",
+    "imgId": "R.drawable.view8"
+    }],
+  "菲律賓":  [{
+    "description": "魔法河",
+    "imgId": "R.drawable.view9"
+    }],
+  "東非坦尚尼亞":  [{
+    "description": "塞倫蓋蒂平原",
+    "imgId": "R.drawable.view10"
+    }]
+}

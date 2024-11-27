@@ -1,5 +1,7 @@
 package com.example.ex05_recyclerview01a;
 
+//import static com.example.ex05_recyclerview01a.SceneInfo.loadJSONobjectFromassets;
+
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -10,7 +12,12 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
