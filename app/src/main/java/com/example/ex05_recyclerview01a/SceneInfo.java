@@ -59,7 +59,6 @@ public class SceneInfo {
 //        return myListData;
 //    }publpub
 
-
     public static ArrayList<SceneInfo> getMyListDataArrayList2() {
         ArrayList<SceneInfo> myList = new ArrayList<SceneInfo>();
         String[] description = {
