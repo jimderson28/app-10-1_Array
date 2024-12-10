@@ -1,65 +1,62 @@
 {
-  "Asia": [
+  "phone": [
     {
-      "description": "珠穆朗瑪峰",
-      "imgId": "R.drawable.view1",
-      "country": "尼泊爾"
+      "description": "iphone 14",
+      "imgId": "R.drawable.iphone14",
+      "country": "Apple"
     }
   ,
     {
-      "description": "魔法河",
-      "imgId": "R.drawable.view9",
-      "country": "菲律賓"
-    }
-  ],
-  "America": [
-    {
-      "description": "雷神之井瀑布",
-      "imgId": "R.drawable.view2",
-      "country": "美國"
+      "description": "iphone 15",
+      "imgId": "R.drawable.iphone15",
+      "country": "Apple"
     },
     {
-      "description": "優勝美地國家公園",
-      "imgId": "R.drawable.view7",
-      "country": "美國加州"
+      "description": "S24 Ultra",
+      "imgId": "R.drawable.s24",
+      "country": "samsung"
+    }
+  ],
+  "cpmputer": [
+    {
+      "description": "VivoBook s",
+      "imgId": "R.drawable.vivobooks",
+      "country": "Asus"
+    },
+    {
+      "description": "Zenbook 14 OLED",
+      "imgId": "R.drawable.zenbook",
+      "country": "Asus"
+    }
+  ,
+    {
+      "description": "Prestige A16",
+      "imgId": "R.drawable.pre",
+      "country": "MSI"
     }
   ],
   "Africa": [
     {
-      "description": "撒哈拉大沙漠",
-      "imgId": "R.drawable.view6",
-      "country": "北非"
+      "description": "Tab S9",
+      "imgId": "R.drawable.tab9",
+      "country": "samaung"
     },
     {
-      "description": "塞倫蓋蒂平原",
-      "imgId": "R.drawable.view10",
-      "country": "東非坦尚尼亞"
+      "description": "Tab S10+",
+      "imgId": "R.drawable.tab10",
+      "country": "samaung"
     }
-  ],
-  "Europe": [
+  ,
     {
-      "description": "藍冰洞",
-      "imgId": "R.drawable.view3",
-      "country": "冰島"
-    },
-    {
-      "description": "奇蹟石",
-      "imgId": "R.drawable.view5",
-      "country": "挪威"
+      "description": "ipad Pro",
+      "imgId": "R.drawable.pro",
+      "country": "Apple"
     }
-  ],
-  "Australia": [
+  ,
     {
-      "description": "大堡礁",
-      "imgId": "R.drawable.view8",
-      "country": "澳洲"
-    }
-  ],
-  "SouthAmerica": [
-    {
-      "description": "羅賴馬山",
-      "imgId": "R.drawable.view4",
-      "country": "委內瑞拉"
+      "description": "ipad Air",
+      "imgId": "R.drawable.air",
+      "country": "Apple"
     }
   ]
 }
