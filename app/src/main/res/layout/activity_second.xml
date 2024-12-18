@@ -6,23 +6,35 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="226dp"
         android:layout_height="200dp"
         android:layout_gravity="center" />
 
     <TextView
         android:id="@+id/descriptionTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Description"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"/>
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/countryTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="381dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Country"
-        android:textSize="16sp"
-        android:layout_marginTop="8dp"/>
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加入購物車" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回" />
 </LinearLayout>
