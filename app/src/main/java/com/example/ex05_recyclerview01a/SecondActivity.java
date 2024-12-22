@@ -1,5 +1,6 @@
 package com.example.ex05_recyclerview01a;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,6 +48,13 @@ public class SecondActivity extends AppCompatActivity {
                 // 顯示提示信息
                 Toast.makeText(SecondActivity.this, "已加入購物車", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        shop.setOnClickListener(v -> {
+            // 創建一個新的 SceneInfo 物件，加入購物車
+            SceneInfo item = new SceneInfo(description,imageResId , country);
+            CartManager.addToCart(item);
+
         });
     }
 }
