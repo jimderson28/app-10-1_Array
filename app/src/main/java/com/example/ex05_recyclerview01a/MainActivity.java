@@ -2,6 +2,7 @@ package com.example.ex05_recyclerview01a;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,5 +44,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         recyclerView.setAdapter(adapter);
+        findViewById(R.id.shop2).setOnClickListener(v -> {
+            // 跳轉到 activity_shopping 頁面
+            Intent intent = new Intent(MainActivity.this, ShoppingActivity.class);
+            startActivity(intent);
+        });
     }
-}
+    }
+

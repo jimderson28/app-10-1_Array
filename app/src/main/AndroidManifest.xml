@@ -13,6 +13,8 @@
         android:theme="@style/Theme.Ex05RecyclerView01a"
         tools:targetApi="31">
         <activity android:name=".SecondActivity" />
+        <activity android:name=".ShoppingActivity" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
