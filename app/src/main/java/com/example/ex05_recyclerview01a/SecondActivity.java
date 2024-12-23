@@ -1,8 +1,6 @@
 package com.example.ex05_recyclerview01a;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -12,22 +10,26 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SecondActivity extends AppCompatActivity {
 
+    private CartDatabaseHelper dbHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        dbHelper = new CartDatabaseHelper(this);
 
         // 接收從 MainActivity 傳遞過來的數據
         String description = getIntent().getStringExtra("description");
         String country = getIntent().getStringExtra("country");
         int imageResId = getIntent().getIntExtra("imageResId", -1);
 
-        // 設置資料
+        // 設置資料到視圖
+
         TextView descriptionTextView = findViewById(R.id.descriptionTextView);
         TextView countryTextView = findViewById(R.id.countryTextView);
         ImageView imageView = findViewById(R.id.imageView);
         Button backButton = findViewById(R.id.backButton);
-        Button shop = findViewById(R.id.shop);
+        Button shopButton = findViewById(R.id.shop);
 
         descriptionTextView.setText(description);
         countryTextView.setText(country);
@@ -36,25 +38,19 @@ public class SecondActivity extends AppCompatActivity {
         }
 
         // 設置返回按鈕的點擊事件
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-        shop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // 顯示提示信息
-                Toast.makeText(SecondActivity.this, "已加入購物車", Toast.LENGTH_SHORT).show();
-            }
+        backButton.setOnClickListener(v -> finish());
+
+        // 設置購物車按鈕的點擊事件
+        shopButton.setOnClickListener(v -> {
+            // 建立 SceneInfo 物件
+            SceneInfo item = new SceneInfo(0,description, imageResId, country);
+
+            // 新增商品到購物車資料庫
+            dbHelper.addToCart(item); // 使用正確的方法
+
+            // 顯示提示訊息
+            Toast.makeText(SecondActivity.this, "已加入購物車", Toast.LENGTH_SHORT).show();
         });
 
-        shop.setOnClickListener(v -> {
-            // 創建一個新的 SceneInfo 物件，加入購物車
-            SceneInfo item = new SceneInfo(description,imageResId , country);
-            CartManager.addToCart(item);
-
-        });
     }
 }
